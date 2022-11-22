@@ -4,6 +4,10 @@
 #include <assert.h>
 #include <math.h>
 
+// To be submitted as a single file, there was no header file (this is something I know how to do however, in addition to a Makefile)
+/*-------------------------------------------------------------------*/
+/* HEADER DECLARATIONS */
+
 #define BOARD_SIZE 8       /* board size */
 #define ROWS_WITH_PIECES 3 /* number of initial rows with pieces */
 #define CELL_EMPTY '.'     /* empty cell character */
@@ -102,6 +106,9 @@ void recur_fill_costs(decision_node_t *root, int depth);
 void propagate_cost(decision_node_t *root);
 
 int play_round(board_t board, int move, int check_gover);
+
+/*-------------------------------------------------------------------*/
+/* MAIN PLAY FUNCTIONS */
 
 int main(int argc, char *argv[])
 {
