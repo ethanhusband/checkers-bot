@@ -191,7 +191,7 @@ int play_round(board_t board, int move, int check_gover)
 }
 
 /*-------------------------------------------------------------------*/
-/* STAGE 0 FUNCTIONS */
+/* GAMEPLAY VALIDATION FUNCTIONS */
 void fill_board(board_t board)
 {
     /* Fill the array with the initial board values */
@@ -546,7 +546,7 @@ int calculate_cost(board_t board)
 }
 
 /*-------------------------------------------------------------------*/
-/* STAGE 1 FUNCTIONS */
+/* MOVE FINDING FUNCTIONS */
 
 void recursive_addlayers(decision_node_t *node, int move, int tree_depth)
 {
@@ -875,6 +875,3 @@ void propagate_cost(decision_node_t *root)
     }
     root->minimax_cost = propagated_cost;
 }
-
-/* THE END -------------------------------------------------------------------*/
-/* algorithms are fun */
